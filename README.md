@@ -1,1 +1,1 @@
-# Word-Switcher-Chrome-Extension
+# Word Switcher Chrome Extension
