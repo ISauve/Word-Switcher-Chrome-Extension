@@ -4,15 +4,6 @@
  It automatically runs on every page when the extension is enabled.
  It uses a popup with a form in it to receive input from the user, and then
  saves this to the chrome.storage API to be accessed by the content script.
- 
- Current issues:
- - google uses AJAX to get search results, so if you reload the page
- it accesses information it has already stored (instead of reloading the
- entire DOM itself) and so the extension doesn't change the page
- - facebook does something similar, where switching between pages doesn't
- always trigger the browser to reload the page
- - need to create a background script that injects the content script in these
- cases
  **/
 
 // Initialize with blank values, gets updated from within the popup
